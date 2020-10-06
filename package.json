@@ -1,5 +1,5 @@
 {
-  "name": "Typescript",
+  "name": "Typescript-learning",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.20.0"
+    "@types/faker": "^5.1.2",
+    "axios": "^0.20.0",
+    "faker": "^5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
   }
 }
