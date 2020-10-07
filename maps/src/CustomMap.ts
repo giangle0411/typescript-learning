@@ -2,12 +2,13 @@
 
 // Instructions to every other class
 // on how they can be an argument to 'addMaker'
-interface Marker {
+export interface Mappable {
   location: {
     lat: number
     lng: number
   }
   markerContent(): string
+  color: string
 }
 
 // Separated map and limited access to google map
@@ -27,7 +28,7 @@ export class CustomMap {
   }
 
   // Makes it widely accepted by classes, as long as it fulfill the type Marker
-  addMarker(mappable: Marker): void {
+  addMarker(mappable: Mappable): void {
     const marker = new google.maps.Marker({
       map: this.googleMap,
       position: {

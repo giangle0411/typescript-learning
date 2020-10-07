@@ -100432,6 +100432,7 @@ var User =
 /** @class */
 function () {
   function User() {
+    this.color = 'cyan';
     this.name = faker_1.default.name.firstName();
     this.location = {
       lat: parseFloat(faker_1.default.address.latitude()),
@@ -100467,6 +100468,7 @@ var Company =
 /** @class */
 function () {
   function Company() {
+    this.color = 'yellow';
     this.companyName = faker_1.default.company.companyName();
     this.catchPhrase = faker_1.default.company.catchPhrase();
     this.location = {
@@ -100540,12 +100542,14 @@ var User_1 = require("./User");
 
 var Company_1 = require("./Company");
 
-var CustomMap_1 = require("./CustomMap");
+var CustomMap_1 = require("./CustomMap"); // Create User and Company instances
+
 
 var company = new Company_1.Company();
 var user = new User_1.User(); // create a map
 
-var customMap = new CustomMap_1.CustomMap('map');
+var customMap = new CustomMap_1.CustomMap('map'); // Mark the User and Company on the map
+
 customMap.addMarker(user);
 customMap.addMarker(company);
 },{"./User":"src/User.ts","./Company":"src/Company.ts","./CustomMap":"src/CustomMap.ts"}],"C:/Users/giang/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
