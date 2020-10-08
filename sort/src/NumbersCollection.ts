@@ -1,5 +1,10 @@
-export class NumbersCollection {
-  constructor(public data: number[]) {}
+// Number sorting algorithm
+import { Sorter } from './Sorter'
+
+export class NumbersCollection extends Sorter {
+  constructor(public data: number[]) {
+    super()
+  }
 
   // get -> we dont have to call length as function (example: collection.length)
   get length(): number {
