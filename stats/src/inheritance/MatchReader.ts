@@ -1,3 +1,5 @@
+// Child class, inherit from the parent - CsvFileReader.ts
+
 import { CsvFileReader } from './CsvFileReader'
 import { dateStringToDate } from '../utils'
 import { MatchResult } from '../MatchResult'

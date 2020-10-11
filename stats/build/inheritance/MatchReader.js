@@ -1,4 +1,5 @@
 "use strict";
+// Child class, inherit from the parent - CsvFileReader.ts
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||

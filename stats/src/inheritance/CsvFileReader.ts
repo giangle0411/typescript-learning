@@ -1,3 +1,5 @@
+// Inheritance approach - Use abstract class
+
 import fs from 'fs'
 
 // Generic class (T usually used by convention)
